@@ -2,11 +2,10 @@ body{
 margin:0;
 padding:0;
 }
-.grid{display: grid;grid-template-columns: repeat(5,10rem);grid-template-rows: repeat(5,10rem) 20rem;background-color: #dde0d7;width: 45rem;overflow: hidden;transform: translateY(-5rem);}
+.grid{display: grid;grid-template-columns: repeat(5,10rem);grid-template-rows: repeat(5,10rem) 20rem;background-color: #dde0d7;width: 50rem;overflow: hidden;transform: translateY(-5rem);}
 .item-grid{border-top: 5rem solid #f04a0e;border-left: 5rem solid #f04a0e;border-bottom: 5rem solid transparent;border-right: 5rem solid transparent;  }
+.item-grid:after{height: 7rem;width: 7rem;content: '';display: block;border-top: 3.5rem solid transparent;box-sizing: border-box;border-left: 3.5rem solid #dde0d7;border-bottom: 3.5rem solid transparent;left: -3.5rem;position: relative;top: -10.5rem;transform: rotate(45deg);}
+.item-grid:before{height: 7rem;width: 7rem;content: '';display: block;position: relative;border-top: 3.5rem solid transparent;box-sizing: border-box;border-right: 3.5rem solid #f04a0e;border-bottom: 3.5rem solid transparent;top: -55px;left: -55px;transform: rotate(45deg);}
 .item-grid.alter{border-top: 5rem solid #f04a0e;border-left: 5rem solid #f04a0e;border-bottom: 5rem solid #ffd001;border-right: 5rem solid #ffd001;}
-.item-grid div{height: 5rem;width: 5rem;/*! background-color: #fff; */position: relative;margin: -2.5rem 0 0 -2.5rem;transform: rotate(45deg);/*! border-left: 2.5rem solid wheat; */box-sizing: border-box;/*! border-top: 2.5rem solid transparent; *//*! border-bottom: 2.5rem solid transparent; */}
-.item-grid div:after{height: 7rem;width: 7rem;content: '';display: block;border-top: 3.5rem solid transparent;box-sizing: border-box;border-left: 3.5rem solid #dde0d7;border-bottom: 3.5rem solid transparent;left: -1rem;position: absolute;top: -1rem;}
-.item-grid div:before{height: 7rem;width: 7rem;content: '';display: block;position: absolute;border-top: 3.5rem solid transparent;box-sizing: border-box;border-right: 3.5rem solid #f04a0e;border-bottom: 3.5rem solid transparent;top: -15px;left: -15px;}
-.item-grid div.alter:after{height: 7rem;width: 7rem;content: '';display: block;border-top: 3.5rem solid transparent;box-sizing: border-box;border-left: 3.5rem solid #ffd001;border-bottom: 3.5rem solid transparent;left: -1rem;position: absolute;top: -1rem;}
+.item-grid.alter2:after{border-left: 3.5rem solid #ffd001;}
 .footer{grid-column: span 5;border: 0;background-color: #f04a0e;}
